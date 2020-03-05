@@ -15,6 +15,7 @@
 #' data <- matrix(rnorm(20),2,10)
 #' x <- matrix(c(seq(-2, 2, length.out = 9), rep(0, 9)), 2, 9)
 #' LM0(x, 0.5, "Gaussian", data)
+#' @export
 LM0 <- function(x, h, type = "Gaussian", data){
   x <- as.matrix(x)
   if(dim(x)[1] != dim(data)[1]){
